@@ -397,7 +397,7 @@ function returnLargestStudentCount(classes) {
 console.log(returnLargestStudentCount(classes), 30) // returns 30
 
 "use strict";
-
+//warm up for arrays
 // TODO: Create an array of 4 people's names using literal array notation, in a variable called 'names'.
 var names = ['Alexis', 'Omar', 'Carlos', 'Karina']
 
