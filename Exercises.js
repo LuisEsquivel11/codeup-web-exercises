@@ -26,7 +26,7 @@ let totalWeeklyPay = weeklyAmazonPay + weeklyGooglePay + weeklyFacebookPay;
 
 let fullClass = false;
 let dateConfliction = false;
-let canEnroll = !
+//let canEnroll =
 
 //A product offer can be applied only if a person buys more than 2 items,
 // and the offer has not expired. Premium members do not need to buy a
@@ -82,6 +82,21 @@ let canEnroll = !
 // Close the jar of jelly
 // grab the two slices of bread and put them on top of each other and press gently
 
+const userWantsToDelete = confirm("Do you want to delete");
+const timeWaiting = prompt("How long have you been waiting?")
+// if(userWantsToDelete) {
+//  console.log("delete");
+// } else {
+//   console.log("no delete")
+//}
 
+userWantsToDelete ? console.log("delete") : console.log("no delete"); // Short if else
 
-
+const fishBiting = confirm("Fish are biting?")
+if (fishBiting) {
+  console.log("Reel it in")
+} else if (timeWaiting > 3) {
+  console.log("Recast the line")
+} else {
+  console.log("Keep staring at the water")
+}

@@ -9,7 +9,7 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 function sayHello(name) {
-    return ("Hello " + name)
+    return "Hello " + name
 }
 
 /**
@@ -49,7 +49,7 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > isTwo(3) // returns false
  */
 function isTwo(num) {
-    return (num === 2)
+    return num === 2;
 }
 
  /* Call the function 'isTwo' passing the variable 'random' as a argument.
@@ -74,7 +74,7 @@ console.log(isTwo(random))
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 function calculateTip(tip, bill) {
-    return (tip * bill)
+    return tip * bill
 }
 console.log(calculateTip(0.20, 20))
 console.log(calculateTip(0.25, 25.50))
@@ -85,8 +85,13 @@ console.log(calculateTip(0.15, 33.42))
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
-let tipAmount = calculateTip(prompt("What percentage would you like to tip?"), prompt("How much was the bill?"))
-alert(tipAmount + "$")
+//const tipAmount = calculateTip(prompt("What percentage would you like to tip?"), prompt("How much was the bill?"))
+//alert("$" + tipAmount)
+
+const userTipPerc = (parseFloat(prompt("What percentage would you like to tip?")))/100;
+//const userBillTotal = (parseFloat(prompt("How much was the bill?"))
+
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -101,7 +106,8 @@ alert(tipAmount + "$")
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(price, disc) {
-    return (price - (price * disc))
-}
-console.log(applyDiscount(45.99, 0.12))
+ function applyDiscount(price, disc) {
+     return (price - (price * disc))
+ }
+console.log(applyDiscount(500, 0.10))
+
