@@ -34,23 +34,23 @@
 // }
 
 // TODO - write a while loop that prints your name 10 times
-let name = "Luis"
-let x = 0
-while(x < 10) {
-    ++x;
-    console.log("Luis")
-}
-/*
-    TODO CHALLENGE - write a function, getNum1To10 that returns a number between 1 and 10 from the user.
-      Keep prompting them until a valid number is given
- */
-let usersNum = prompt("Type a number 1 through 10")
-function getNum1To10(usersNum) {
-    while (usersNum <= 10 && usersNum >= 1 ) {
-        return usersNum;
-    }
-}
-console.log(getNum1To10(usersNum))
+// let name = "Luis"
+// let x = 0
+// while(x < 10) {
+//     ++x;
+//     console.log("Luis")
+// }
+// /*
+//     TODO CHALLENGE - write a function, getNum1To10 that returns a number between 1 and 10 from the user.
+//       Keep prompting them until a valid number is given
+//  */
+// let usersNum = prompt("Type a number 1 through 10")
+// function getNum1To10(usersNum) {
+//     while (usersNum <= 10 && usersNum >= 1 ) {
+//         return usersNum;
+//     }
+// }
+// console.log(getNum1To10(usersNum))
 
 // function getNum1To10() {
 //     let num = 0;
@@ -99,10 +99,10 @@ console.log(getNum1To10(usersNum))
     TODO - write a for loop that prints all integers from 20 down to 1
  */
 
-for (let i = 2; i < 100; i += 2) {
-    console.log(i)
-}
-
-for (let o = 20; o > 1; o -= 1) {
-    console.log(o)
-}
+// for (let i = 2; i < 100; i += 2) {
+//     console.log(i)
+// }
+//
+// for (let o = 20; o > 1; o -= 1) {
+//     console.log(o)
+// }
