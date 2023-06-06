@@ -82,21 +82,22 @@ let dateConfliction = false;
 // Close the jar of jelly
 // grab the two slices of bread and put them on top of each other and press gently
 
-const userWantsToDelete = confirm("Do you want to delete");
-const timeWaiting = prompt("How long have you been waiting?")
+//const timeWaiting = prompt("How const userWantsToDelete = confirm(\"Do you want to delete\");\nlong have you been waiting?")
 // if(userWantsToDelete) {
 //  console.log("delete");
 // } else {
 //   console.log("no delete")
 //}
 
-userWantsToDelete ? console.log("delete") : console.log("no delete"); // Short if else
+// userWantsToDelete ? console.log("delete") : console.log("no delete"); // Short if else
+//
+// const fishBiting = confirm("Fish are biting?")
+// if (fishBiting) {
+//   console.log("Reel it in")
+// } else if (timeWaiting > 3) {
+//   console.log("Recast the line")
+// } else {
+//   console.log("Keep staring at the water")
+// }
 
-const fishBiting = confirm("Fish are biting?")
-if (fishBiting) {
-  console.log("Reel it in")
-} else if (timeWaiting > 3) {
-  console.log("Recast the line")
-} else {
-  console.log("Keep staring at the water")
-}
+
