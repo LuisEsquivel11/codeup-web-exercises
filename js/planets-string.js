@@ -28,9 +28,12 @@
      * list. You will need an opening AND closing <ul> tags around the entire
      * string, and <li> tags around each planet.
      */
-     planetsArray.push("<ul>")
-    planetsArray.unshift("<ul>")
-   let unorderedPlanets = planetsArray.join()
-       console.log(unorderedPlanets)
+     var newArray = [...planetsArray]
+
+    newArray.push("<ul>")
+    newArray.unshift("</ul>")
+    newArray.pop()
+    let unorderedPlanets = newArray.join("<li>")
+    console.log(unorderedPlanets)
     document.write(unorderedPlanets)
 })();
