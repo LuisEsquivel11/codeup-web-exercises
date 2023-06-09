@@ -51,9 +51,33 @@ const person = {
         {name: 'Ryan', amount: 250 },
         {name: 'George', amount: 320}
     ];
-shoppers.forEach(number => console.log(number.amount));
 
 
+
+        let discount
+        let newAmount
+
+shoppers.forEach((obj) => {
+
+    const yesDiscount = `${obj.name}, ${obj.amount}, ${discount}, ${newAmount} `;
+    const noDiscount = `${obj.name}, ${obj.amount}`;
+
+    discount = (obj.amount * .12).toFixed(2)
+       newAmount = (obj.amount - discount).toFixed(2)
+            if (obj.amount > 200) {
+               console.log(yesDiscount);
+            } else {
+               console.log(noDiscount)
+            }
+   });
+
+// Walk through
+
+        // shoppers.forEach((shopper) => {
+        //     if (shopper.amount > 200) {
+        //         console.log(`${shopper.name}`)
+        //     }
+        // })
 
 
 
@@ -63,9 +87,15 @@ shoppers.forEach(number => console.log(number.amount));
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
-     * variable named `books`. Each object should have a title and an author
-     * property. The author property should be an object with properties
-     * `firstName` and `lastName`. Be creative and add at least 5 books to the
+     * variable named `books`.
+     *
+     * Each object should have a title and an author
+     * property.
+     *
+     * The author property should be an object with properties
+     * `firstName` and `lastName`.
+     *
+     * Be creative and add at least 5 books to the
      * array
      *
      * Example:
@@ -73,6 +103,29 @@ shoppers.forEach(number => console.log(number.amount));
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+const books = [
+        {
+            title: "Atomic Habits",
+            author: {firstName: "James", lastName:"Clear"}
+        },
+        {
+            title: "The Call of Cthulhu",
+            author: {firstName: "H. P.", lastName:"Lovecraft"}
+        },
+        {
+            title: "The Silmarillion",
+            author: {firstName: "J. R.", lastName: "Tolkien"}
+        },
+        {
+            title: "Halo: The Fall of Reach " ,
+            author: {firstName: "Eric", lastName: "Nylund"}
+        },
+        {
+            title: "Soft Skills",
+            author: {firstName: "John", lastName: "Sonmez"}
+        }
+        ]
+
 
     /**
      * TODO:
@@ -99,6 +152,26 @@ shoppers.forEach(number => console.log(number.amount));
      *      ...
      */
 
+
+        // for (let i = 0; i < books.length; i++) {
+        //     console.log(`Book #${i + 1} `)
+        //
+        // }
+
+       books.forEach((books, index) => {
+            console.log(`Book #${index + 1}`);
+            console.log(`Title: ${books.title}`);
+            console.log(`Author: ${books.author.firstName} ${books.author.lastName}`)
+           if (index < books.length - 1)
+               console.log("---");
+       })
+
+
+
+
+
+
+
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -109,5 +182,11 @@ shoppers.forEach(number => console.log(number.amount));
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+    function createBook(title, authorFirstName, authorLastName)
+
+
+
+
 
 }());
