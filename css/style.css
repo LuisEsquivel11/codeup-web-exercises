@@ -1,10 +1,45 @@
 :root {
-    --purple: #830c83;
+    --purple: #ff00ff;
 }
-
-
 
 .fancy-header {
-    color: #860a86;
+    color: purple;
 }
 
+body {
+    font-family: "Geneva";
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    text-decoration: underline;
+    color: red;
+}
+
+body {
+    background-color: beige;
+    background-image: url("/IMG/background.jpg");
+    background-size: contain;
+}
+
+ol { list-style: upper-roman; }
+ul { list-style: square; }
+
+td {
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+tr {
+   font-size: 20px;
+}
+
+a:link {color: red;}
+a:hover {color: lawngreen;}
+a:active {color: deepskyblue}
+a:visited {color: black;}
