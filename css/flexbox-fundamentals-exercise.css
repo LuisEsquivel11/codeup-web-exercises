@@ -65,13 +65,16 @@ section:nth-of-type(1) div:last-child {
     background: fuchsia;
     width: 3em;
     height: 1em;
+    margin: 10px 0;
 }
 
 .purple-box:nth-of-type(1) {
     /* enter needed declarations here */
+    flex-grow: 1;
 }
 
 .purple-box:nth-of-type(2) {
+    flex-grow: .5;
     /* enter needed declarations here */
 }
 
@@ -82,6 +85,7 @@ section:nth-of-type(1) div:last-child {
 }
 
 section:nth-of-type(3) {
+    display: flex ;
     /* enter needed declarations here */
 }
 
