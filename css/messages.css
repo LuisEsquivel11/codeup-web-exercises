@@ -10,26 +10,26 @@ body, html {
     background-color: lightgrey;
     margin: .5em;
     padding: .5em;
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
     border-radius: 5px;
 }
 
 .message-info {
-    background-color: ;
-    color: ;
+    background-color: #cddeff;
+    color: #473c9d;
 }
 
 .message-success {
-    background-color: ;
-    color: ;
+    background-color: #cff3da;
+    color: #15723e;
 }
 
 .message-warning {
-    background-color: ;
-    color: ;
+    background-color: #fcfbc9;
+    color: #826e02;
 }
 
 .message-error {
-    background-color: ;
-    color: ;
+    background-color: #fad3d7;
+    color: #88233c;
 }
