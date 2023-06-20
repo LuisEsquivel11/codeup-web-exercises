@@ -100,4 +100,26 @@ let dateConfliction = false;
 //   console.log("Keep staring at the water")
 // }
 
-
+// June 09, 2023 Monday
+//write a function, sumIsEqual, that takes in three inputs. the function should return true if the sum of the first two inputs are equal to the third input. If any of the inputs are not number, return false.
+//   function isNotANumber(input) {
+//     if (typeof input === 'number' || isNaN(input) ) {
+//       return false;
+//     } else {
+//       return true;
+//     }
+//   }
+//
+//   function sumIsEqual (input1, input2, input3) {
+// if(isNotANumber(input1, input2, input3)) {
+//   return false;
+// } else if (input1 + input2 === input3) {
+//   return false;
+// } else {
+//   return true;
+// }
+//   }
+//   console.log(sumIsEqual(3, 4, 7));
+//   console.log(sumIsEqual(2, 2, 6));
+//   console.log(sumIsEqual(4, 50, 2));
+//   console.log(sumIsEqual('5', '2', '9'));
