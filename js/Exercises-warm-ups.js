@@ -19,10 +19,10 @@ let weeklyAmazonPay = amazonHourlyRate * amazonHours
 let weeklyFacebookPay = facebookHourlyRate * facebookHours
 
 let totalWeeklyPay = weeklyAmazonPay + weeklyGooglePay + weeklyFacebookPay;
- console.log(totalWeeklyPay)
+console.log(totalWeeklyPay)
 
 // A student can be enrolled in a class only if the class is not full and
- //the class schedule does not conflict with her current schedule.
+//the class schedule does not conflict with her current schedule.
 
 let fullClass = false;
 let dateConfliction = false;
@@ -57,7 +57,7 @@ let dateConfliction = false;
 //
 // // neither the username or password can start or end with whitespace
 //let usernameAndPasswordTrimmed = username.trim() === username &&
-                                       // password.trim() === password;
+// password.trim() === password;
 // Grab ingredients
 // Wash your hands with soap
 // Go to the pantry
@@ -123,3 +123,26 @@ let dateConfliction = false;
 //   console.log(sumIsEqual(2, 2, 6));
 //   console.log(sumIsEqual(4, 50, 2));
 //   console.log(sumIsEqual('5', '2', '9'));
+
+//================================= WARM UP Jun 21
+// Create a function, returnProduct, that takes in an array of numbers and returns the product of all the numbers.
+// Assume all element in the input array are valid numbers. Assume all array inputs have at least 1 number.
+// returnProduct([1, 2, 3]) // returns 1 * 2 * 3 = 6
+// returnProduct([3, 3, 3]) // returns 3 * 3 * 3 = 27
+// returnProduct([4, 1, 2]) // returns 4 * 1 * 2 = 8
+// returnProduct([4, 0, 2]) // returns 4 * 0 * 2 = 0
+// returnProduct([5, 3, 2]) // returns 5 * 3 * 2 = 30
+
+// function returnProduct(nums) {
+//     let product = 1
+//     for (let num of nums) {
+//         product *= num;
+//     }
+//     return product;
+//
+function returnProduct(nums) {
+    for (let i = 0; i < nums.length; i++) {
+        product *= nums[i];
+    }
+    return product;
+}

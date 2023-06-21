@@ -21,3 +21,6 @@
     --bs-btn-disabled-border-color: #0d6efd;
 }
 
+.purple {
+    background-color: var(--bs-purple);
+}
