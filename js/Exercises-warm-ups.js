@@ -147,17 +147,59 @@ let dateConfliction = false;
 //     return product;
 // }
 
-//TODO: Create an array of 4 people's names using literal array notation, in a variable called 'names'.
-var names = ['Alexis', 'Omar', 'Carlos', 'Karina']
+// //TODO: Create an array of 4 people's names using literal array notation, in a variable called 'names'.
+// var names = ['Alexis', 'Omar', 'Carlos', 'Karina']
+//
+// // TODO: Create a log statement that will log the number of elements in the names array.
+// console.log("There are " + names.length + " names in the array");
+//
+// // TODO: Create log statements that will print each of the names array elements individually.
+// for (var i = 0; i < names.length; i++) {
+//     console.log(names[i]);
+// }
+//
+// names.forEach(function (element, index, array) {
+//     console.log(element);
+// });
 
-// TODO: Create a log statement that will log the number of elements in the names array.
-console.log("There are " + names.length + " names in the array");
+//     EXAMPLE...
 
-// TODO: Create log statements that will print each of the names array elements individually.
-for (var i = 0; i < names.length; i++) {
-    console.log(names[i]);
+const salesData = [
+    {
+        month: 'January',
+        totalItemsSold: 0
+    },
+    {
+        month: 'February',
+        totalItemsSold: 5
+    },
+    {
+        month: 'March',
+        totalItemsSold: 2
+    },
+    {
+        month: 'April',
+        totalItemsSold: 10
+    },
+    {
+        month: 'May',
+        totalItemsSold: 30
+    }
+];
+
+returnTotalSales(salesData) // returns 47
+// ================================= WARM UP
+//
+// Create a function, returnTotalSales, that takes in an array of sales data objects and returns the sum of all
+// totalItemsSold properties. Assume all elements in the input array are valid sales data objects with a totalItemsSold
+// property.
+//
+
+function returnTotalSales(arr) {
+    let total = 0;
+    for (var i = 0; i < salesData.length; i++) {
+        total = total + salesData[i].totalItemsSold;
+    }
+    return total;
 }
-
-names.forEach(function (element, index, array) {
-    console.log(element);
-});
+console.log(returnTotalSales(salesData))
