@@ -187,7 +187,7 @@ const salesData = [
     }
 ];
 
-returnTotalSales(salesData) // returns 47
+// returnTotalSales(salesData) // returns 47
 // ================================= WARM UP
 //
 // Create a function, returnTotalSales, that takes in an array of sales data objects and returns the sum of all
@@ -195,11 +195,23 @@ returnTotalSales(salesData) // returns 47
 // property.
 //
 
+//for loop version
+// function returnTotalSales(arr) {
+//     let total = 0;
+//     for (var i = 0; i < salesData.length; i++) {
+//         total = total + salesData[i].totalItemsSold;
+//     }
+//     return total;
+// }
+// console.log(returnTotalSales(salesData))
+
+// forEach version
+
 function returnTotalSales(arr) {
-    let total = 0;
-    for (var i = 0; i < salesData.length; i++) {
-        total = total + salesData[i].totalItemsSold;
-    }
-    return total;
+    let sum = 0
+    salesData.forEach(element => {
+        sum += element.totalItemsSold;
+        return sum;
+    });
 }
 console.log(returnTotalSales(salesData))
