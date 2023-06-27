@@ -196,22 +196,27 @@ const salesData = [
 //
 
 //for loop version
-// function returnTotalSales(arr) {
-//     let total = 0;
-//     for (var i = 0; i < salesData.length; i++) {
-//         total = total + salesData[i].totalItemsSold;
-//     }
-//     return total;
-// }
-// console.log(returnTotalSales(salesData))
-
-// forEach version
-
 function returnTotalSales(arr) {
-    let sum = 0
-    salesData.forEach(element => {
-        sum += element.totalItemsSold;
-        return sum;
-    });
+    let total = 0;
+    for (let i = 0; i < salesData.length; i++) {
+        total = total + salesData[i].totalItemsSold;
+    }
+    return total;
 }
 console.log(returnTotalSales(salesData))
+
+// ================================= WARM UP
+//
+// Create a function, returnAvgSales, that takes in an array of sales data objects and returns the average of all
+// total items sold. Assume all elements in the input array are valid sales data objects with a totalItemsSold
+// property. If the array is empty, return 0. If the array has one element, return the value of the totalItemsSold.
+
+    //EXAMPLE...
+
+//returnAvgSales(salesData) // returns 9.4
+
+function returnAvgSales(arr) {
+  return returnTotalSales(salesData) / salesData.length;
+}
+console.log(returnAvgSales(salesData))
+
