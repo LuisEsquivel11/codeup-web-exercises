@@ -220,3 +220,93 @@ function returnAvgSales(arr) {
 }
 console.log(returnAvgSales(salesData))
 
+
+
+
+const users = [
+
+    {
+        username: 'fred123',
+        password: 'letmein',
+        email: 'fred123@email.com',
+        isAdmin: true
+    },
+    {
+        username: 'cindy123',
+        password: 'hello123',
+        email: 'cindy123@email.com',
+        isAdmin: false
+    },
+    {
+        username: 'kathy123',
+        password: 'letmein',
+        email: 'kathy123@email.com',
+        isAdmin: true
+    },
+    {
+        username: 'kyle123',
+        password: 'letmein',
+        email: 'kyle123@email.com',
+        isAdmin: false
+    }
+]
+
+// ================================= WARM UP
+//
+// Create a function, returnAdmins, that takes in an array of user objects
+// and returns an array of only the admin user objects. Assume the array
+// has at least one user object and all elements have an isAdmin property.
+//
+//     Example:
+/*
+
+returnAdmins(users) returns...
+
+[
+
+    {
+        username: 'fred123',
+        password: 'letmein',
+        email: 'fred123@email.com',
+        isAdmin: true
+    },
+    {
+        username: 'kathy123',
+        password: 'letmein',
+        email: 'kathy123@email.com',
+        isAdmin: true
+    }
+]
+
+*/
+
+function returnAdmins(users) {
+    const admins = [];
+
+     for (let i = 0; i < users.length; i++) {
+         if (users[i].isAdmin === true) {
+            admins.push(users[i]);
+         }
+     }
+     return admins;
+}
+
+console.log(returnAdmins(users));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
