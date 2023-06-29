@@ -340,15 +340,26 @@ const neighborhood4 = {
 // The function should return true if the neighborhood object is desireable and false otherwise.
 
 
-function isDesirableHood(neighborhood) {
-    const isRightPrice = neighborhood.medianHomePrice < 300000;
-    const isRightCrimeRate = neighborhood.crimeRate === "low";
-    const isRightSchoolRating = neighborhood.schools >= 24;
+// function isDesirableHood(neighborhood) {
+//     const isRightPrice = neighborhood.medianHomePrice < 300000;
+//     const isRightCrimeRate = neighborhood.crimeRate === "low";
+//     const isRightSchoolRating = neighborhood.schools >= 24;
+//
+//     const isDesirable = isRightPrice && isRightCrimeRate && isRightSchoolRating;
+//
+//     return isDesirable;
+// }
 
-    const isDesirable = isRightPrice && isRightCrimeRate && isRightSchoolRating;
+// function isDesirableHood(neighborhood) {
+//     return neighborhood.medianHomePrice < 300000 && neighborhood.crimeRate === "low" && neighborhood.schools >= 24
+// }
 
-    return isDesirable;
+// DESTRUCTURING
+
+function isDesirableHood({medianHomePrice, crimeRate, schools}) {
+    return medianHomePrice < 300000 && crimeRate === "low" && schools >= 24
 }
+
 
 console.log(isDesirableHood(neighborhood1), false)
 console.log(isDesirableHood(neighborhood2), false)
