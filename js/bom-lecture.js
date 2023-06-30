@@ -2,27 +2,111 @@
 
 // set interval
 
-function sayHello() {
-    console.log("Hello")
-}
+/*
+       ================================= BROWSER OBJECT MODEL (BOM)
 
- let intervalId = setInterval(sayHello, 5); // give the setInterval an id
+       BOM = hierarchy of objects that make up the browser
 
- clearInterval(intervalId)  // clear the interval using clearInterval() , you need the id of the setInterval.
+       Highest level object: window object
 
-// create pop-up add after 3 secs
+       Main objects nested within the window object:
 
-let x;
- let wait = 2000;
+           document  - a tree of elements of the current page
+           navigator - info about the browser itself
+           location  - info about the current url
+           history   - history of visited url with methods to traverse history
+           screen    - info about the current browser dimensions
 
- let timeoutId = setTimeout(function() {  // setTimout allows you to delay the execution of code
-     alert("You won dude");
-     x = 23;
-     console.log("The value of x is: " + x);
- }, wait);
+           additional information: https://www.w3schools.com/js/js_ex_browser.asp
 
- // asynchronous errors
-    console.log(x);
+       Important methods within the window object:
+           Dialogue functions: alert(), confirm(), prompt()
+           setInterval() - starts an interval that can execute a repeated process
+           setTimeout() - starts a timer after which a process may execute
 
-    window.location = "https://google.com"; // redirects user to another website
+       Location object:
+
+           Redirect to another page or reload the current page
+
+   */
+
+
+
+/*
+    ================================= setInterval()
+
+    Set interval method:
+
+    Real world application:
+        slide show animation
+        music sequencer
+        AJAX requests
+
+    ** see example **
+*/
+
+// function sayHello() {
+//     console.log("Justin Reich");
+// }
+//
+// let intervalId = setInterval(sayHello, 3000);
+
+
+
+// create interval to say howdy 10 times
+
+// let interval = 200;
+// let i = 1;
+//
+// let intervalId = setInterval(function(){
+//     if (i === 10) {
+//         clearInterval(intervalId);
+//     }
+//     console.log("Howdy!!!");
+//     ++i;
+// }, interval);
+//
+// console.log(intervalId);
+
+
+/*
+    ================================= setTimeout()
+
+        Real world application:
+
+        session time out (online banking)
+        pop up window  -  https://ambitionally.com/popupally/sample-time/
+*/
+
+
+// create pop up ad after 3 seconds
+
+// let x;
+// let wait = 2000;
+//
+// let timeoutId = setTimeout(function() {
+//     alert("You WON $1,000,000.00!!!!");
+//     x = 23;
+//     console.log("The value of x is: " + x);
+// }, wait);
+
+
+// asynchronous errors
+//    console.log(x);
+
+
+
+
+// ================================= Location object
+
+// Redirect
+
+// window.location = "https://www.google.com";
+
+
+// Reload page
+
+// location.reload();
+// location.reload(true);
+
 
