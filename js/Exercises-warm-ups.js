@@ -413,6 +413,17 @@ names.forEach(function (element, index, array) {
     console.log(element);
 });
 
+// TODO: Show an alert message that welcomes the user based on their input.
+alert("Welcome, " + userName + "!")
+// TODO: Ask the user if they like pizza.
+//       Based on their answer show a creative alert message.
+var response = confirm("Do you like pizza, " + userName + "?")
+
+if (response) {
+    alert("Sweet, I do too!")
+} else {
+    alert("Really? That's weird...")
+}
 
 
 
