@@ -1,3 +1,4 @@
+"use strict"
 //                  DAY 4 of Class
 
 //Suppose you're working as a contractor for 3 companies: Google, Amazon and Facebook,
@@ -493,9 +494,29 @@ function getTopRunners(runnersArray) {
     for (let runner of runnersArray) {
         //check if top runner
         //if true add if not do nothing
-        if(calculateLapTimeAverage(runner.lapTimes) < 50)
+        if (calculateLapTimeAverage(runner.lapTimes) > 50)
             topRunners.push(runner)
     }
+}
+
+    function getTopRunner(runnersArray) {
+        let topRunner = runnersArray[0];
+
+        //Loop through the array
+        for (let i = 1; i < runnersArray.length; i++) {
+            //Check if the runner is faster than our current top runner
+            if (calculateLapTimeAverage(runnersArray[i].lapTimes) < calculateLapTimeAverage(topRunner.lapTimes)) {
+                // If so, replace the top runner
+                topRunner = runnersArray[i]
+            }
+                }
+        return topRunner;
+    }
+
+  console.log(getTopRunner(runners));
+
+
+
 
     function calculateLapTimeAverage(lapTimesArray) {
         let total = 0
@@ -509,8 +530,7 @@ function getTopRunners(runnersArray) {
     }
 
     //return empty array if no top runners
-    return topRunners;
-}
+
 console.log(getTopRunners(runners));
 
 // HINT: You might want to create a function called calculateLapTimeAverage

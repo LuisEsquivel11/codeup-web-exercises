@@ -25,16 +25,16 @@ const setBg = () => {
 function strobeBackground() {
     setInterval(setBg,  100)
 }
+
 const konamiCode = ['ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter']
 
 let correctCode = " "
-
 
 $(document).keydown( function(event) {
     correctCode += event.key;
 
     if (correctCode.includes(konamiCode)) {
-
+        alert("You have added 30 lives")
         $('body').css('background-color', strobeBackground)
     }
 
