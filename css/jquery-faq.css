@@ -1,0 +1,6 @@
+.invisible {
+    visibility: hidden;
+}
+.highlighted {
+    background-color: lightblue;
+}

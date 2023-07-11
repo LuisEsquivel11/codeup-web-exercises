@@ -1,0 +1,14 @@
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+/*Showing how this will change how JS interacts with our Node element*/
+article.css>div {
+    height: 240px;
+    width: 240px;
+}
+
+.jeremy {
+    background-color: red;
+}
