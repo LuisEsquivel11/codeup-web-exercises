@@ -4,3 +4,29 @@
 .highlighted {
     background-color: lightblue;
 }
+.align-space-between {
+    align-items: center;
+}
+
+.yellow-background {
+    background-color: yellow;
+}
+.blue-text {
+    color: blue
+}
+.bold-font {
+    font-weight: bold;
+}
+.box {
+    height: 200px;
+    width: 200px;
+}
+.one {
+    background-color: palevioletred;
+}
+.two {
+    background-color: deepskyblue;
+}
+.three {
+    background-color: mediumseagreen;
+}
