@@ -807,7 +807,31 @@ houseInfo(hogwartsHouses)
 // - Write a conditional statement to log something special for your favorite house
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+
+// Write a function called removeEvens that takes an array of numbers
+// And removes any even number from the array
+
+// Examples:
+
+// Input: [1, 3, 2, 13, 74, 33]
+// Expected Output: [1, 3, 13, 33]
+
+// Input: [62, 3, 2, 8, 531, 7]
+// Expected Output: [3, 531, 7]
+
+function removeEvens(numbers) {
+    let newArray = []
+    for (let number of numbers) {
+        if (number % 2 !== 0) {
+            newArray.push(number)
+        }
+    } return newArray
+}
+console.log(removeEvens([1, 3, 2, 13, 74, 33]))
 
 
 
