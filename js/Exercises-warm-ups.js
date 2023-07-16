@@ -822,14 +822,32 @@ houseInfo(hogwartsHouses)
 
 // Input: [62, 3, 2, 8, 531, 7]
 // Expected Output: [3, 531, 7]
-
+function isANumber(input) {
+    if (typeof input === "boolean" ||  input === null) {
+        return false
+    } else if (isNaN(input)) {
+        return false;
+    } else {
+        return true
+    }
+}
 function removeEvens(numbers) {
+    //guard against anything thats not an array
+    if(!Array.isArray(numbers)){
+        return false;
+    }
+
     let newArray = []
     for (let number of numbers) {
+        // guard against any item that is not a number
+        if(!isANumber(number)) {
+            return false;
+        }
         if (number % 2 !== 0) {
             newArray.push(number)
         }
-    } return newArray
+    }
+    return newArray
 }
 console.log(removeEvens([1, 3, 2, 13, 74, 33]))
 
