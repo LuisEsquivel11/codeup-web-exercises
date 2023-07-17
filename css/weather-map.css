@@ -4,3 +4,12 @@
     margin-top: 100px;
 }
 
+.height {
+    height: 450px;
+}
+#today-card-bg-img {
+    background-image: url('/IMG/sunny,clear-sky.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
