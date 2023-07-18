@@ -178,7 +178,7 @@ $(() => {
             todaysCard.html(`
                     <div class="d-flex column pb-2">
                         <div class="col-6 d-flex gap-2 justify-content-start">
-                            <h3 class="text-center mt-2 ms-5 display-1 ">${data.list[0].main.temp}˚</h3>
+                            <h3 class="text-center mt-2 ms-5 display-1 ">${data.list[0].main.temp}˚F</h3>
                             <p class="text-center mb-5 mt-2">${data.list[0].main.temp_max}˚/${data.list[0].main.temp_min}˚</p>
                         </div>
                         <div class="d-flex flex-column justify-content-center mx-5 ">
@@ -235,7 +235,7 @@ $(() => {
                         <div class="d-flex column border-bottom border-info pb-4">
                             <div class="col-6">
                                 <h3 class="text-center  mt-2 mx-2 display-8">${data.list[i].main.temp}˚</h3>
-                                <p id="high-low" class="text-center">High/Low</p>
+                                <p id="high-low" class="text-center">${data.list[i].main.temp_max}˚/${data.list[i].main.temp_min}˚</p>
                             </div>
                             <div class="d-flex flex-column justify-content-center px-4">
                                 <p class="text-center">${data.list[i].weather[0].description}</p>
@@ -276,7 +276,7 @@ $(() => {
                                             <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
                                             <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
                                         </svg>
-                                        ${data.list[i].dt_txt}
+                                        ${data.list[i].dt_txt.split(" ")[0]}
                                     </h6>
                                 </li>
                             </ul>
