@@ -9,3 +9,17 @@ function changeBackgroundToFav() {
        body.classList.toggle('background-fav')
 
 }
+
+
+// TODO: add the needed JS so that the number selected in the number input will be added to the number in the span when the button is clicked
+
+//Walk thru
+// $('#add-btn').on('click', () => {
+//     console.log($('#number').val());
+// });
+$('#add-btn').on('click', () => {
+    const input = $('#number').val();
+    const output = $('#sum-output').text();
+    const total = parseInt(input) + parseInt(output)
+    $('#sum-output').text(total);
+});
